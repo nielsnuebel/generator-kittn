@@ -36,7 +36,8 @@ yarn-error.log*
 /dist/craft/.htaccess
 /dist/craft/web.config
 /src/craftplugins/
-/src/structure/config/license.key<% } else { %>
+/src/structure/config/license.key<% } else if (projectusage == 'joomla' || projectusage == 'joomlaCB') { %>
+dist/configuration.php<% } else { %>
 dist/<% } %>
 build/
 doc/
